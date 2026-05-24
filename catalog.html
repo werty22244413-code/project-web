@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог напитков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>ZeroAlcohol</h2>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Каталог товаров</h1>
+        
+        <div class="grid">
+            <!-- Товар 1 -->
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80" alt="Лимонад Лаванда-Цитрус" class="product-img">
+                </div>
+                <h3>Лимонад «Лаванда-Цитрус»</h3>
+                <p style="color:#666; margin-bottom:1rem;">Освежающий микс лимона и горной лаванды.</p>
+                <div class="price">180 ₽</div>
+                <button onclick="addToCart(1, 'Лимонад Лаванда-Цитрус', 180)">Купить</button>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=500&auto=format&fit=crop&q=80" alt="Холодный чай Маття-Мята" class="product-img">
+                </div>
+                <h3>Холодный чай «Маття-Мята»</h3>
+                <p style="color:#666; margin-bottom:1rem;">Тонизирующий зеленый чай суперфуд со льдом.</p>
+                <div class="price">210 ₽</div>
+                <button onclick="addToCart(2, 'Холодный чай Маття-Мята', 210)">Купить</button>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=500&auto=format&fit=crop&q=80" alt="Сидр Яблочный сад" class="product-img">
+                </div>
+                <h3>Безалкогольный Сидр «Яблочный сад»</h3>
+                <p style="color:#666; margin-bottom:1rem;">Игристое удовольствие из спелых яблок без спирта.</p>
+                <div class="price">250 ₽</div>
+                <button onclick="addToCart(3, 'Сидр Яблочный сад', 250)">Купить</button>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&auto=format&fit=crop&q=80" alt="Коктейль Ноль-Мохито" class="product-img">
+                </div>
+                <h3>Коктейль «Ноль-Мохито»</h3>
+                <p style="color:#666; margin-bottom:1rem;">Классический вкус лайма, тростникового сахара и мяты.</p>
+                <div class="price">190 ₽</div>
+                <button onclick="addToCart(4, 'Коктейль Ноль-Мохито', 190)">Купить</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Разработка веб-интерфейса безалкогольных напитков</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
